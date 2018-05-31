@@ -1,6 +1,6 @@
 /* ABOVE THE FOLD - MASTER */
 .above-the-fold {
-    /*background: url('/images/texture.png');*/
+    background: url('/images/texture.png');
 }
 .above-the-fold .row .col-md-6 {
     text-align: center;
