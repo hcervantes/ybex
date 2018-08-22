@@ -5,31 +5,84 @@
     {{> views/meta-tags/meta-tags.partial.html }}
     <!-- HANDLEBARS SECTIONS STARTING WITH $ DENOTE A BUILT-IN COMPILER DIRECTIVE (SEE GITHUB) -->
     {{> $.tags }}
-    {{> $.styles }}
-    {{> views/tag-partials/font-awesome.partial.html }}
-    {{> $.scripts }}
+
+    
+    <!-- Page Title -->
+    <title>Welcome to Burrito Express Home</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/favicon.ico">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Custom font icons -->
+    <!-- <link rel="stylesheet" href="https://file.myfontastic.com/6AeAYiqp5KBjSiZ2tE8WJW/icons.css"> -->
+    <link rel="stylesheet" href="css/icons.css">
+    <!-- Font Awesome -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!-- Slider -->
+    <link rel="stylesheet" href="css/slider.min.css">
+    <!-- Lightbox Pop up -->
+    <link rel="stylesheet" href="css/lightbox.min.css">
+    <!-- Datepicker -->
+    <link rel="stylesheet" href="css/datepicker.min.css">
+    <!-- Datepicker -->
+    <link rel="stylesheet" href="css/timepicki.min.css">
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.default.css">
+    <!-- Modernizr -->
+    <script type="text/javascript" src="js/modernizr.custom.79639.min.js"></script>
+
 </head>
 <body>
+    {{> views/header/preloader.partial.html }}
+    <div id="page">
     {{> views/header/header.partial.html }}
-    <div class="body">
-        <div class="above-the-fold min-body-height">
-            <div class="row">
-                <div class="col-md-6" style="color: white; text-align: left;">
-                    <div class="content-section">
-                        <h2>{{ sectionTitle }}</h2>
-                        <p>
-                            {{{ sectionBody }}}
-                        </p>
-                        {{> views/social-bar/social-bar-lg.partial.html }}
-                    </div>
-                </div> 
-                <div class="col-md-6">
-                    <img src="images/logo4.png" alt="Burrito Express - Home of the $4 burrito!">
-                    <h1>Comming Soon!</h1>
-                </div>
-            </div>
-        </div>
-        {{> views/footer/footer.partial.html }}
+    
+<!--content Sections
+=======================-->
+    <div id="page-holder">
+            
+            {{> views/pages/navbar.partial.html }}
+            {{> views/pages/herosection.partial.html }}
+            {{> views/pages/details.partial.html }}
+            {{> views/pages/aboutus.partial.html }}
+            {{> views/pages/proteins.partial.html }}
+            {{> views/pages/dishes.partial.html }}
+            {{> views/pages/menu.partial.html }}
+            {{> views/pages/gallery.partial.html }}
+            {{> views/pages/booking.partial.html }}
+            {{> views/pages/contactus.partial.html }}
+            {{> views/pages/footer.partial.html }}
+            {{> views/pages/modal-form.partial.html }}
+                  
+       <!-- scroll top btn -->
+       <div id="scrollTop" class="btn-unique">
+            <i class="fa fa-angle-up"></i>
+        </div><!-- end scroll top btn -->
+
+
     </div>
+
+    <!--j <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.ba-cond.min.js"></script>
+    <script src="js/jquery.slitslider.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/lightbox.min.js"></script>
+    <script src="js/datepicker.min.js"></script>
+    <script src="js/datepicker.en.min.js"></script>
+    <script src="js/timepicki.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/smooth.scroll.min.js"></script>
+    <!-- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC0dSWcBx-VghzhzQB6oCMTgeXMOhCYTvk"></script> -->
+    <script type="text/javascript" src="js/googlemapapi.js"></script>
+    <script src="js/map.min.js"></script>
+    <script src="js/script.js"></script>
+
+    
 </body>
 </html>

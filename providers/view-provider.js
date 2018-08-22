@@ -14,12 +14,12 @@ module.exports.initialize = function(app) {
         cwd: nodePath.join(__dirname, '..'),
         partials: [ "views/**/*.partial.html" ],
         pages: [ "views/**/*.html", "!views/**/*.partial.html" ],
-        scripts: [ "assets/**/*.js" ],
-        styles: [ "assets/**/*.css" ],
+        scripts: [""],
+        styles: [ "" ],
         defaults: {
-            title: "Ultimate Node Website",
-            description: "A Node JS website template, built with SEO in mind. Get your website up and running in minutes, guaranteed fast response times and high base-line SEO scores.",
-            twitter_user: "@twitter"
+            title: "Burrito Express - Delicious",
+            description: "Home site for Burito Express of Dayton, OH.  Were we serve delicious beef barbacoa, pork carnitas, chicken tinga, grilled chicken, and steak burritos.",
+            twitter_user: "@hmcervantes"
         },
         isProd: !!process.env.PROD_FLAG,
         wwwRoot: 'views/',
